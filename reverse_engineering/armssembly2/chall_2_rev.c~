@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int func1(int arg) {
+  int a = 0, b = 0;
+  int w0 = arg;
+  int w1 = 0;
+  
+  while(w1 < w0) {
+    a += 3;
+    b++;
+    w1 = b;
+  }
+
+  return a;
+}
+
+int main() {
+  int ret = func1(2403814618);
+
+  printf("Result: %ld\n", ret);
+
+  return 0;
+}
